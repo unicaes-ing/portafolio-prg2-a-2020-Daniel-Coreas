@@ -73,5 +73,10 @@ namespace Practica_2
                 MessageBox.Show("Seleccione las longitudes a convertir");
             }
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
