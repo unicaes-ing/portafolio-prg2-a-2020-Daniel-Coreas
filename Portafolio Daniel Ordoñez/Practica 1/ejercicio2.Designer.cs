@@ -1,6 +1,6 @@
 ﻿namespace Practica_1
 {
-    partial class Form2
+    partial class ejercicio2
     {
         /// <summary>
         /// Required designer variable.
