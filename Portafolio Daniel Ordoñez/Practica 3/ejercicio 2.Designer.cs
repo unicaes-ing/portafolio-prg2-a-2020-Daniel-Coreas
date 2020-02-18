@@ -37,12 +37,12 @@
             this.lstLetras.FormattingEnabled = true;
             this.lstLetras.Location = new System.Drawing.Point(13, 13);
             this.lstLetras.Name = "lstLetras";
-            this.lstLetras.Size = new System.Drawing.Size(120, 342);
+            this.lstLetras.Size = new System.Drawing.Size(120, 108);
             this.lstLetras.TabIndex = 0;
             // 
             // btnMostrar
             // 
-            this.btnMostrar.Location = new System.Drawing.Point(13, 360);
+            this.btnMostrar.Location = new System.Drawing.Point(13, 127);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(75, 23);
             this.btnMostrar.TabIndex = 1;
@@ -54,7 +54,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(171, 386);
+            this.ClientSize = new System.Drawing.Size(171, 159);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.lstLetras);
             this.Name = "ejercicio_2";
