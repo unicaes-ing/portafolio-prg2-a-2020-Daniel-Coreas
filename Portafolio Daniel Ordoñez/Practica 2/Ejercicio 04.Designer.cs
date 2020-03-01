@@ -82,6 +82,7 @@
             // 
             this.txtContra.Location = new System.Drawing.Point(77, 54);
             this.txtContra.Name = "txtContra";
+            this.txtContra.PasswordChar = '*';
             this.txtContra.Size = new System.Drawing.Size(135, 20);
             this.txtContra.TabIndex = 4;
             this.txtContra.Validating += new System.ComponentModel.CancelEventHandler(this.txtContra_Validating);
@@ -91,6 +92,7 @@
             // 
             this.txtValidContra.Location = new System.Drawing.Point(77, 91);
             this.txtValidContra.Name = "txtValidContra";
+            this.txtValidContra.PasswordChar = '*';
             this.txtValidContra.Size = new System.Drawing.Size(135, 20);
             this.txtValidContra.TabIndex = 5;
             this.txtValidContra.Validating += new System.ComponentModel.CancelEventHandler(this.txtValidContra_Validating);
