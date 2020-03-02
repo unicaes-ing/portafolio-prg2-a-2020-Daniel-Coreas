@@ -37,5 +37,22 @@ namespace Practica_3
             }
             dgvNumeros.ClearSelection();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            int n;
+            n = Convert.ToInt32(txtNumBuscar.Text);
+            for (int f = 0; f < 10; f++)
+            {
+                for (int c = 0; c < 10; c++)
+                {
+                    if (dgvNumeros.Rows[f].Cells[c].Value.Equals(n))
+                    {
+                        dgvNumeros.Rows[f].Cells[c].Style.BackColor = Color.Yellow;
+                    }
+
+                }
+            }
+        }
     }
 }
