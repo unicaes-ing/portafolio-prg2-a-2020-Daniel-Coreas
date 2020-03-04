@@ -34,6 +34,19 @@ namespace Practica_4
                 return num3;
             }
         }
+        public static int numero(int n1, int n2)
+        {
+            int num1 = n1;
+            int num2 = n2;
+            if (num1 > num2)
+            {
+                return num1;
+            }
+            else
+            {
+                return num2;
+            }
+        }
         private void btnMayor_Click(object sender, EventArgs e)
         {
             try
