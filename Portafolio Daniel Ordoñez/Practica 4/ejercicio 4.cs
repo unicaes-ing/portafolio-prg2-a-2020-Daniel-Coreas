@@ -16,52 +16,59 @@ namespace Practica_4
         {
             InitializeComponent();
         }
-        public static int numero(int n1, int n2, int n3)
+        public static int numeroM(int n1, int n2, int n3)
         {
-            int num1 = n1;
-            int num2 = n2;
-            int num3 = n3;
-            if (num1 > num2 && num1 > num3)
+            int N = 0;
+            if (n1 > n2 && n1 > 3)
             {
-                return num1;
+                N = n1;
             }
-            else if (num2 > num1 && num2 > num3)
+            if (n2 > n1 && n2 > n3)
             {
-                return num2;
+                N = n2;
             }
-            else
+            if (n3 > n1 && n3 > n2)
             {
-                return num3;
+                N = n3;
             }
+            return N;
         }
-        public static int numero(int n1, int n2)
-        {
-            int num1 = n1;
-            int num2 = n2;
-            if (num1 > num2)
-            {
-                return num1;
-            }
-            else
-            {
-                return num2;
-            }
-        }
+
         private void btnMayor_Click(object sender, EventArgs e)
         {
-            try
+            int n1, n2, n3;
+            if (txtNum1.Text.Length < 1 && txtNum2.Text.Length < 1 || txtNum1.Text.Length < 1 && txtNum3.Text.Length < 1 || txtNum2.Text.Length < 1 && txtNum3.Text.Length < 1)
             {
-                int n1, n2, n3, nMayor;
-                n1 = Convert.ToInt32(txtNum1.Text);
-                n2 = Convert.ToInt32(txtNum2.Text);
-                n3 = Convert.ToInt32(txtNum3.Text);
-                nMayor = numero(n1, n2, n3);
-                lblMayor.Text = string.Format("El mayor es:{0}", nMayor);
+                MessageBox.Show("Ingrese 2 o 3 numeros");
             }
-            catch (Exception)
+            else
             {
-
-                MessageBox.Show("Ingrese los 3 numeros");
+                if (txtNum1.Text.Length < 1)
+                {
+                    n1 = 0;
+                }
+                else
+                {
+                    n1 = Convert.ToInt32(txtNum1.Text);
+                }
+                if (txtNum2.Text.Length < 1)
+                {
+                    n2 = 0;
+                }
+                else
+                {
+                    n2 = Convert.ToInt32(txtNum2.Text);
+                }
+                if (txtNum3.Text.Length < 1)
+                {
+                    n3 = 0;
+                }
+                else
+                {
+                    n3 = Convert.ToInt32(txtNum3.Text);
+                }
+                int mayor = numeroM(n1, n2, n3);
+                lblMayor.Text = string.Format("El numero mayor es: {0}", mayor);
             }
         }
     }
