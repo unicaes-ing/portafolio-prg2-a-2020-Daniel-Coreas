@@ -79,7 +79,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(13, 26);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 116);
+            this.dataGridView1.Size = new System.Drawing.Size(240, 113);
             this.dataGridView1.TabIndex = 3;
             // 
             // dataGridView2
@@ -90,7 +90,7 @@
             this.dataGridView2.Location = new System.Drawing.Point(259, 25);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(240, 117);
+            this.dataGridView2.Size = new System.Drawing.Size(240, 114);
             this.dataGridView2.TabIndex = 4;
             // 
             // dataGridView3
@@ -101,7 +101,7 @@
             this.dataGridView3.Location = new System.Drawing.Point(505, 25);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.Size = new System.Drawing.Size(240, 116);
+            this.dataGridView3.Size = new System.Drawing.Size(240, 113);
             this.dataGridView3.TabIndex = 5;
             // 
             // groupBox1
@@ -109,7 +109,7 @@
             this.groupBox1.Controls.Add(this.btnCalcular);
             this.groupBox1.Controls.Add(this.rdoMulti);
             this.groupBox1.Controls.Add(this.rdoSumar);
-            this.groupBox1.Location = new System.Drawing.Point(259, 148);
+            this.groupBox1.Location = new System.Drawing.Point(259, 145);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 72);
             this.groupBox1.TabIndex = 6;
@@ -152,7 +152,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 235);
+            this.ClientSize = new System.Drawing.Size(800, 225);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView2);

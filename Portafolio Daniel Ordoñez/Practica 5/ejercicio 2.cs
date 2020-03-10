@@ -20,6 +20,7 @@ namespace Practica_5
         int[,] B = new int[5, 5];
         private void ejercicio_2_Load(object sender, EventArgs e)
         {
+
             dataGridView1.ColumnCount = 5;
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.ColumnHeadersVisible = false;
@@ -35,6 +36,7 @@ namespace Practica_5
                     dataGridView1.Rows[f].Cells[c].Value = A[f, c];
                 }
             }
+
             dataGridView2.ColumnCount = 5;
             dataGridView2.AllowUserToAddRows = false;
             dataGridView2.ColumnHeadersVisible = false;
@@ -66,6 +68,7 @@ namespace Practica_5
             int[,] total = new int[5, 5];
             if (rdoSumar.Checked)
             {
+
                 dataGridView3.ColumnCount = 5;
                 dataGridView3.AllowUserToAddRows = false;
                 dataGridView3.ColumnHeadersVisible = false;

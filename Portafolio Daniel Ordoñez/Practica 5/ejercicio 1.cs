@@ -81,14 +81,21 @@ namespace Practica_5
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            int nombre = Array.IndexOf(vendedores, txtbuscar.Text);
-            if (nombre >= 0)
+            if (txtbuscar.TextLength>0)
             {
-                listBox1.SelectedIndex = nombre;
+                int nombre = Array.IndexOf(vendedores, txtbuscar.Text);
+                if (nombre >= 0)
+                {
+                    listBox1.SelectedIndex = nombre;
+                }
+                else
+                {
+                    MessageBox.Show("Nombre no encontrado...");
+                }
             }
             else
             {
-                MessageBox.Show("Nombre no encontrado");
+                MessageBox.Show("Ingrese el nombre a buscar");
             }
         }
     }
