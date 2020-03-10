@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Practica_4
+namespace Practica_5
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Practica_4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ejercicio_2());
+            Application.Run(new Form1());
         }
     }
 }
