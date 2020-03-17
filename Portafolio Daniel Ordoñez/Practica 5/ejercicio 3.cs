@@ -20,7 +20,7 @@ namespace Practica_5
         private void ejercicio_3_Load(object sender, EventArgs e)
         {
             ven[0] = new string[5] { "40", "50", "70", "79", "28" };
-            ven[1] = new string[2] { "0", "0" };
+            ven[1] = new string[3] { "70", "0","90"};
             ven[2] = new string[2] { "120", "100" };
             ven[3] = new string[1] { "90" };
             ven[4] = new string[4] { "75", "79", "50", "0" };
