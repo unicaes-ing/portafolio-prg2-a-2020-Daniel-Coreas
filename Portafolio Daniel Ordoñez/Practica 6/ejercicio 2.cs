@@ -26,12 +26,13 @@ namespace Practica_6
         Dictionary<string, string> registroClientes = new Dictionary<string, string>();
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtTelefono.Text == "" && !Regex.IsMatch(txtTelefono.Text, patronTel))
+            if (txtTelefono.Text == "" || !Regex.IsMatch(txtTelefono.Text, patronTel))
             {
+
                 MessageBox.Show("El teléfono es un campo obligatorio");
                 txtTelefono.Focus();
             }
-            else if (txtNombre.Text == "" && !Regex.IsMatch(txtNombre.Text, patronNombre))
+            else if (txtNombre.Text == "" || !Regex.IsMatch(txtNombre.Text, patronNombre))
             {
                 MessageBox.Show("El nombre es un campo obligatorio");
                 txtNombre.Focus();
@@ -59,7 +60,6 @@ namespace Practica_6
                 errorProvider1.Clear();
             }
         }
-
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
             if (!Regex.IsMatch(txtNombre.Text, patronNombre))
@@ -71,9 +71,9 @@ namespace Practica_6
                 errorProvider1.Clear();
             }
         }
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+
             if (txtTelefono.TextLength > 0)
             {
                 if (!registroClientes.ContainsKey(txtTelefono.Text))
@@ -85,7 +85,26 @@ namespace Practica_6
                 }
                 else
                 {
-                    MessageBox.Show("Numero perteneciente a: " + registroClientes[txtTelefono.Text].ToString());
+                    MessageBox.Show("Número perteneciente al contacto: " + registroClientes[txtTelefono.Text].ToString());
+                }
+            }
+        }
+        private void btnQuitar_Click(object sender, EventArgs e)
+        {
+            if (txtTelefono.Text.Equals("") ||  registroClientes.Count == 0)
+            {
+                MessageBox.Show("No existen datos para borrar");
+            }
+            else if (listView1.SelectedItems.Count==0)
+            {
+                MessageBox.Show("Seleccione un elemento para elimitar");
+            }
+            else
+            {
+                registroClientes.Remove(txtTelefono.Text);
+                foreach (ListViewItem lista in listView1.SelectedItems)
+                {
+                    lista.Remove();
                 }
             }
         }
