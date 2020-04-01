@@ -43,7 +43,6 @@ namespace Practica_6
             {
                 e.Handled = true;
             }
-
             if (e.KeyChar == '.' && !txtSueldo.Text.Contains("."))
             {
                 e.Handled = false;
