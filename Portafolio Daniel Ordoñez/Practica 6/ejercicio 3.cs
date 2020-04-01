@@ -85,6 +85,7 @@ namespace Practica_6
                     total = total + Convert.ToDouble(dataGridView1.Rows[i].Cells[2].Value);
                 }
                 lblTotal.Text = "Total Planilla: $"+ total.ToString();
+                
             }
             MessageBox.Show("Datos almacenados...");
         }
@@ -128,13 +129,18 @@ namespace Practica_6
             {
                 for (int M = 0; M < dataGridView1.Rows.Count; M++)
                 {
-
                     if (dataGridView1.Rows[M].Cells[0].Value.Equals(maskedTextBox2.Text))
                     {
                         dataGridView1.Rows.RemoveAt(M);
                         regisEmp.Remove(maskedTextBox2.Text);
                     }
                 }
+                double total = 0.0;
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    total = total + Convert.ToDouble(dataGridView1.Rows[i].Cells[2].Value);
+                }
+                lblTotal.Text = "Total Planilla: $" + total.ToString();
             }
             else
             {
