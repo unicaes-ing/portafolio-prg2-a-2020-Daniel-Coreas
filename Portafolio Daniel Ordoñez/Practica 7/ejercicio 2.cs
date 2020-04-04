@@ -70,25 +70,25 @@ namespace Practica_7
         {
             if (mtxCodigo.Text == "" || !mtxCodigo.MaskFull || !Regex.IsMatch(mtxCodigo.Text, patronCodigo))
             {
-                MessageBox.Show("Ingrese el codigo de la mascota");
+                MessageBox.Show("Ingrese el codigo de la mascota...");
                 mtxCodigo.Focus();
             }
             else if (txtNombre.Text == "" || !Regex.IsMatch(txtNombre.Text, patronNombre))
             {
-                MessageBox.Show("Ingrese el nombre..");
+                MessageBox.Show("Ingrese el nombre...");
                 txtNombre.Focus();
             }
             else if (Convert.ToString(cboPropietario.SelectedItem) == "")
             {
-                MessageBox.Show("Seleccione al propietario");
+                MessageBox.Show("Seleccione al propietario!");
             }
             else if (Convert.ToString(cboEspecie.SelectedItem) == "")
             {
-                MessageBox.Show("Ingrese la especie de su mascota");
+                MessageBox.Show("Ingrese la especie de su mascota...");
             }
             else if (txtPeso.Text == "")
             {
-                MessageBox.Show("Ingrese el peso..");
+                MessageBox.Show("Ingrese el peso...");
                 txtNombre.Focus();
             }
             else

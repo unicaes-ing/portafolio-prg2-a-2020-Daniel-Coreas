@@ -65,17 +65,17 @@ namespace Practica_7
         {
             if (txtNombre.Text == "" || !Regex.IsMatch(txtNombre.Text, patronNombre))
             {
-                MessageBox.Show("Ingrese el nombre..");
+                MessageBox.Show("Ingrese el nombre...");
                 txtNombre.Focus();
             }
             else if (txtCorreo.Text == "" || !Regex.IsMatch(txtCorreo.Text, patronCorreo) || txtCorreo.Text.Contains(";") || txtCorreo.Text.Contains(":"))
             {
-                MessageBox.Show("El correo es un campo obligatorio");
+                MessageBox.Show("El correo es un campo obligatorio...");
                 txtNombre.Focus();
             }
             if (mtxTelefono.Text == "" || !Regex.IsMatch(mtxTelefono.Text, patronTel))
             {
-                MessageBox.Show("El teléfono es un campo obligatorio");
+                MessageBox.Show("El teléfono es un campo obligatorio...");
                 mtxTelefono.Focus();
             }
             else
@@ -144,8 +144,17 @@ namespace Practica_7
 
         private void btnMascotas_Click(object sender, EventArgs e)
         {
-            ejercicio_2 ejer2= new ejercicio_2();
-            ejer2.Show();
+            if (dataGridView1.Rows.Count>0)
+            {
+                ejercicio_2 ejer2 = new ejercicio_2();
+                ejer2.Show();
+            }
+            else
+            {
+                MessageBox.Show("Ingrese propietarios para poder \npasar al siguiente formulario...");
+                txtNombre.Focus();
+            }
+            
         }
     }
 }
