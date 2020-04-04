@@ -147,7 +147,7 @@ namespace Practica_7
             if (dataGridView1.Rows.Count>0)
             {
                 ejercicio_2 ejer2 = new ejercicio_2();
-                ejer2.Show();
+                ejer2.ShowDialog();
             }
             else
             {
